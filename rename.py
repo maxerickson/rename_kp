@@ -15,7 +15,7 @@ for child in osm:
             t=child.findall("./tag[@k='name']")[0]
             n=t.get('v')
             newname=n.replace(' Kp',' Key Peninsula')
-            renames.write(n+';'+newname+'\n')
+            renames.write(child.get('id')+';'+n+';'+newname+'\n')
             t.set('v', newname)
             # mark element as modified.
             child.set('action', 'modify')
