@@ -1,0 +1,1 @@
+curl -o highways.osm http://overpass-api.de/api/interpreter?data=%5Bout%3Axml%5D%3B%0Aarea%283601153347%29-%3E.searchArea%3B%0A%28%0Away%5B%22highway%22%5D%5B%22name%22~%22Kp%22%5D%28area.searchArea%29%3B%0A%3E%3B%0A%29%3B%0Aout%20meta%3B
